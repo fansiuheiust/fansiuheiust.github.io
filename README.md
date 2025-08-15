@@ -1,17 +1,25 @@
-# FAN Siu Hei
+# FAN Siu Hei (Jerry)
+My simple CV
 ## Bio
-19M, Hong Kong
+19M, Hong Kong  
+Qualifiers: Perseverance, Adaptability, Passion  
+Programming Languages: Python, C#, C++
 ## Education
 1. _King's College_ (2018-2024)
 2. _Hong Kong University of Science and Technology_ (2024-now)
-CGPA (As of 25Summer): `4.009090909090909`
-Dean's List: `24Fall`, `25Spring`
-List of A+'s
-| Course | Semester |Title |
+
+CGPA (As of 2025 Summer): `4.009090909090909`  
+Dean's List Terms (Term GPA >= 3.7): `2024 Fall`, `2025 Spring`  
+
+<details>
+<summary>The A+ List</summary>  
+| Semester | Course |Title |
 |--------|----------|------|
-| COMP1021 | 24Fall |Introduction to Computer Science |
-| MATH1013 | 24Fall | Calculus 1B |
-| PHYS1112 | 24Fall | General Physics 1 with Calculus |
-| COMP2011 | 25Spring | Programming with C++ |
-| ELEC1200 | 25Spring | A System View of Communications |
-| COMP2711 | 25Summer | Discrete Math Tools for CS |
+|  2024 Fall | COMP1021 |Introduction to Computer Science |
+|| MATH1013 | Calculus 1B |
+|| PHYS1112 | General Physics 1 with Calculus |
+| 2025 Spring | COMP2011 | Programming with C++ |
+|| ELEC1200 | A System View of Communications |
+| 2025 Summer | COMP2711 | Discrete Math Tools for CS |
+
+</details>
