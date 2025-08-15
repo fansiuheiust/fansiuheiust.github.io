@@ -2,7 +2,7 @@
 My simple CV
 ## Bio
 19M, Hong Kong  
-Qualifiers: Perseverance, Adaptability, Passion  
+Skills: Backend, Game Design  
 Programming Languages: Python, C#, C++
 ## Education
 1. _King's College_ (2018-2024)
