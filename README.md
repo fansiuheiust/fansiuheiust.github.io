@@ -13,6 +13,7 @@ Dean's List Terms (Term GPA >= 3.7): `2024 Fall`, `2025 Spring`
 <details>
 <summary>Click: The A+ List</summary>
 
+
 | Semester | Course |Title |
 |--------|----------|------|
 |  2024 Fall | COMP1021 |Introduction to Computer Science |
