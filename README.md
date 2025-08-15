@@ -10,9 +10,7 @@ Programming Languages: Python, C#, C++
 
 CGPA (As of 2025 Summer): `4.009090909090909`  
 Dean's List Terms (Term GPA >= 3.7): `2024 Fall`, `2025 Spring`  
-<details>
-<summary>Click: The A+ List</summary>
-
+__The A+ List__  
 
 | Semester | Course |Title |
 |--------|----------|------|
@@ -22,5 +20,3 @@ Dean's List Terms (Term GPA >= 3.7): `2024 Fall`, `2025 Spring`
 | 2025 Spring | COMP2011 | Programming with C++ |
 || ELEC1200 | A System View of Communications |
 | 2025 Summer | COMP2711 | Discrete Math Tools for CS |
-
-</details>
