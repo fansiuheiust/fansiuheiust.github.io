@@ -1,5 +1,5 @@
 # FAN Siu Hei (Jerry)
-My simple CV
+My simple CV // TODO: make an actual html webpage CV
 ## Bio
 19M, Hong Kong  
 Skills: Backend, Game Design  
@@ -8,9 +8,9 @@ Programming Languages: Python, C#, C++
 1. _King's College_ (2018-2024)
 2. _Hong Kong University of Science and Technology_ (2024-now)
 
-CGPA (As of 2025 Summer): `4.009090909090909`  
+CGPA (As of 2025 Summer): `4.009090909090909...`  
 Dean's List Terms (Term GPA >= 3.7): `2024 Fall`, `2025 Spring`  
-__The A+ List__  
+__Bragging Wrongs: The Hall of A+__  
 
 | Semester | Course |Title |
 |--------|----------|------|
