@@ -1,3 +1,7 @@
+:root {
+    interpolate-size: allow-keywords;
+}
+
 body {
     /*background-color: #252e33;*/
     background: #020024;
@@ -17,7 +21,45 @@ h1, h2, h3 {
     text-shadow: 1.5px 1.5px #777;
 }
 ul {
-    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: inherit;
+}
+li {
+    font-size: inherit;
+}
+
+details {
+    height: fit-content;
+    overflow: hidden;
+}
+details::details-content {
+    block-size: 0;
+    transition: block-size 80ms linear, content-visibility 80ms;
+    transition-behavior: allow-discrete;
+}
+details[open]::details-content {
+    block-size: auto;
+}
+
+details summary {
+    width: fit-content;
+    border: 2px outset rgba(170, 195, 215);
+}
+details[open] summary {
+    width: fit-content;
+    border: 2px inset rgba(170, 195, 215);
+    color: #edffea;
+    text-shadow: 0 0 4px #26ff00;
+}
+
+table {
+    background-color: #465052;
+    border: 2px inset #2f3436;
+}
+th, td {
+    border: 2px outset #232628;
+    background-color: #3b4345;
 }
 
 
@@ -35,7 +77,9 @@ div.block {
     margin-bottom: 2%;
     /*background-color: #697d87; */
     background: #697D87;
-    background: linear-gradient(150deg,rgba(105, 125, 135, 0.9) 0%, rgba(122, 147, 161, 0.9) 50%, rgba(167, 190, 209, 0.9) 100%);
+    background: linear-gradient(135deg,rgba(105, 125, 135, 0.9) 0%, rgba(122, 147, 161, 0.9) 50%, rgba(167, 190, 209, 0.9) 100%);
+    /*background-attachment: fixed;*/
+    
     border-radius: 8px;
     border: 4px outset #a3c2d4;
     padding: 0.5%;
@@ -57,7 +101,6 @@ div.block.aggregated {
     font-size: 14px;
     margin-right: 5px;
     background-color: rgb(52, 55, 56, 0.5);
-
     box-shadow: 0.75px 0.75px rgb(178, 191, 194), 1.5px 1.5px rgb(178, 191, 194);
 }
 .tag.proficient {
@@ -90,6 +133,5 @@ a:hover.ig {
     background-color: #566e6e;
     border-radius: 2px;
     border: 2px inset #688282;
-    width: 90%;
     font-family: "Times New Roman", serif;
 }
