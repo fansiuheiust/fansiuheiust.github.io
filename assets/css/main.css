@@ -136,7 +136,7 @@ a:hover.ig {
     font-family: "Times New Roman", serif;
 }
 
-.project {
+.projectlist {
     background-color: #454e4e;
     border: 1px outset #677474;
     border-radius: 5px;
@@ -144,9 +144,9 @@ a:hover.ig {
     padding-right: 2px;
     margin-bottom: 10px;
 }
-.project .tag {
+.projectlist .tag {
     background-color: rgba(63, 139, 190, 0.5);
 }
-.project details summary {
+.projectlist details summary {
     border-color: #738181;
 }
