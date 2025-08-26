@@ -1,0 +1,33 @@
+* {
+  background-color: black;
+  color: #fffbdb;
+  text-shadow: 0 0 4px #ff0, 0 0 4px #ff0;
+  font-size: 16;
+}
+#combinatorioTitle {
+  color: #ffdedc;
+  text-shadow: 0 0 6px #ff0000, 0 0 6px #ff0000;
+  font-weight: bold;
+  font-family: "Consolas", monospace;	
+  font-size: 36px;
+  text-align: center;
+}
+
+#combinatorioLog {
+  font-style: italic;
+  font-family: "Consolas", monospace;
+}
+
+.logSuccess {
+  color: #dbffff;
+  text-shadow: 0 0 4px #00ffff, 0 0 4px #00ffff;
+}
+.logFail {
+  color: #ffffff;
+  text-shadow: 0 0 4px #ffffff, 0 0 4px #ffffff;
+}
+.win {
+  color: #f2ffde;
+  text-shadow: 0 0 4px #a2ff00, 0 0 4px #a2ff00;
+  font-weight: bold;
+}

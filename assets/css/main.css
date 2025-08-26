@@ -62,6 +62,10 @@ th, td {
     background-color: #3b4345;
 }
 
+iframe {
+    height: 300px;
+    min-width: 50%;
+}
 
 #info {
     display:flex;
