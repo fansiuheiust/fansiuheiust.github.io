@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="initial-scale=1.0">
 <link rel="stylesheet" href="./assets/css/main.css">
 <body>
 
@@ -13,7 +13,7 @@
         <br>
         Skills: <span class="tag">backend</span><span class="tag"> game dev </span>
         <br>
-        Programming: <span class="tag proficient">C#</span><span class="tag proficient">Python</span><span class="tag competent">Pascal</span><span class="tag competent">C++</span><span class="tag competent">Javascript</span>
+        Programming: <span class="tag proficient">C#</span><span class="tag proficient">Unity</span><span class="tag proficient">Python</span><span class="tag competent">Pascal</span><span class="tag competent">C++</span><span class="tag competent">Javascript</span>
         <br>
         CGPA: <span class="figure">4.009</span>
     </div>
@@ -24,10 +24,14 @@
         E-mail (personal): <a href="mailto:fansiuhei2@gmail.com">fansiuhei2@gmail.com</a>
     </div>
 </div>
+
+<!--
 <div class="block">
     <h1>Biography</h1>
     Coming soon.
 </div>
+-->
+
 <div class="block">
     <h1>Education</h1>
     <h3>2018-2024: King's College, Hong Kong <span class="tag">Secondary</span></h3>
@@ -38,14 +42,27 @@
     </ul>
     <details>
         <summary>Learn more</summary>
-        <div class="essay">coming soon</div>
+        <div class="essay">
+            In my Secondary School, I had hands-on experiences with artificial intelligence.
+            In 2022, I participated in Formula AI, a racing competition with Donkey Car - a self-driving remote-control car, and won second place.
+            Donkey Car is trained by recording frames using its front camera, and processing them from a server in Google Colab.
+            Through this competition, I learnt the factors affecting the accuracy of an AI model, such as number and quality of data, environmental lighting.
+            <br>
+            In the next year, I attended an AI drone course, which used drones from DJI with front cameras, capable of image recognition.
+            From this course, I learnt to incorporate predictions from AI into programs, like making the drones fly up upon seeing a character.
+            <br>
+            <br>
+            Aside from AI, I also gained valuable experience in game software engineering.
+            For the school's Open Day, I made a game inspired by Hypixel Skyblock's dungeon-crawler in Unity.
+            The game includes procedural generation, mobs, puzzles, ... (see: <a href="#project">Projects</a>).
+        </div>
     </details>
     <br>
     <h3>2024-2028: Hong Kong University of Science and Technology <span class="tag">Higher Ed.</span></h3>
     <ul>
         <li>Department of Computer Science and Engineering, School of Engineering</li>
         <span class="tag">COMP</span><span class="tag">+AI</span>
-        <li>CGPA (2024 Summer): <span class="figure">4.009</span>, Major GPA: <span class="figure">4.263</span></li>
+        <li>24 Summer CGPA: <span class="figure">4.009</span>, Major GPA: <span class="figure">4.263</span></li>
         <li>List of Dean's Lists: <span class="tag">24 Fall</span><span class="tag">25 Spring</span> </li>
     </ul>
     <details>
@@ -61,10 +78,10 @@
             student-held organizations, and so on.
             <br>
             <br>
-            Hall of Fame: the list of A+ courses:
+            Hall of Fame - the list of A+ courses:
             <table>
                 <tr>
-                    <th>Course</th> <th>Brief</th> <th>Semester</th> <th>Remark</th>
+                    <th>Course</th> <th>Brief</th> <th>Semester</th>
                 </tr>
                 <tr>
                     <td>COMP1021</td> <td>Intro. to CS</td> <td>24 Fall</td>
@@ -90,7 +107,23 @@
     <br>
 </div>
 <div class="block">
-    <h1>Projects</h1>
-    Coming soon.
+    <h1 id="project">Projects</h1>
+    <div class="project">
+        <h3>Unnamed Dungeon Game</h3>
+        <span class="tag">procedural generation</span><span class="tag">combat</span><span class="tag">puzzles</span><span class="tag">boss fight</span><span class="tag">C#</span><span class="tag">Unity</span>
+        <details>
+            <summary>Learn more</summary>
+            <div class="essay">
+                This game is inspired by Hypixel Skyblock's dungeons (Catacombs), made for my secondary school's open day.
+                <br>
+                In this game, the dungeon is procedurally generated in a square grid filled with rooms.
+                The rooms include: combat room, puzzle room, blacksmith room, mini-boss room, and a pre-boss room.
+                <br>
+                Spawned in a starting room, the player will explore the dungeon to fight, obtain gears, gain buffs, and so on, where clearing a room will unlock adjacent rooms.
+                <br>
+                Should the player reach the pre-boss room, they can initiate a final boss fight.
+            </div>
+        </details>
+    </div>
 </div>
 </body>

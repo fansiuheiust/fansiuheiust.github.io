@@ -135,3 +135,18 @@ a:hover.ig {
     border: 2px inset #688282;
     font-family: "Times New Roman", serif;
 }
+
+.project {
+    background-color: #454e4e;
+    border: 1px outset #677474;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 10px;
+}
+.project .tag {
+    background-color: rgba(63, 139, 190, 0.5);
+}
+.project details summary {
+    border-color: #738181;
+}
