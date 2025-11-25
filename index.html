@@ -1,143 +1,183 @@
-<meta name="viewport" content="initial-scale=1.0">
-<link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="assets/css/main.css">
+<head>
+    <title>CV</title>
+</head>
 <body>
-
-<br>
-<div id="info">
-    <div class="block aggregated" style="width: 53%;">
-        <h1>FAN Siu Hei, Jerry</h1>
-        <h2>Undergraduate</h2>
-        Location: Hong Kong
-        <br>
-        Age: <span class='figure'>19</span>
-        <br>
-        Skills: <span class="tag">backend</span><span class="tag"> game dev </span>
-        <br>
-        Programming: <span class="tag proficient">C#</span><span class="tag proficient">Unity</span><span class="tag proficient">Python</span><span class="tag competent">Pascal</span><span class="tag competent">C++</span><span class="tag competent">Javascript</span>
-        <br>
-        CGPA: <span class="figure">4.009</span>
-    </div>
-    <div class="block aggregated" style="width: 34%;">
-        <h1>Contact</h1>
-        Instagram: <a class="ig" href="https://www.instagram.com/xx_jerryfan_xx">@xx_jerryfan_xx</a>
-        <br>
-        E-mail (personal): <a href="mailto:fansiuhei2@gmail.com">fansiuhei2@gmail.com</a>
-    </div>
-</div>
-
-<!--
-<div class="block">
-    <h1>Biography</h1>
-    Coming soon.
-</div>
--->
-
-<div class="block">
-    <h1>Education</h1>
-    <h3>2018-2024: King's College, Hong Kong <span class="tag">Secondary</span></h3>
-    <ul>
-        <li>2022-2023: Computer Club</li>
-        <span class="tag">Chairman</span><span class="tag">Competition</span><span class="tag">Game Design</span>
-        <li>HKDSE Best 5/Best 6: <span class="figure">27/31</span></li>
-    </ul>
-    <details>
-        <summary>Learn more</summary>
-        <div class="essay">
-            In my Secondary School, I had hands-on experiences with artificial intelligence.
-            In 2022, I participated in Formula AI, a racing competition with Donkey Car - a self-driving remote-control car, and won second place.
-            Donkey Car is trained by recording frames using its front camera, and processing them from a server in Google Colab.
-            Through this competition, I learnt the factors affecting the accuracy of an AI model, such as number and quality of data, environmental lighting.
-            <br>
-            In the next year, I attended an AI drone course, which used drones from DJI with front cameras, capable of image recognition.
-            From this course, I learnt to incorporate predictions from AI into programs, like making the drones fly up upon seeing a character.
-            <br>
-            <br>
-            Aside from AI, I also gained valuable experience in game software engineering.
-            For the school's Open Day, I made a game inspired by Hypixel Skyblock's dungeon-crawler in Unity.
-            The game includes procedural generation, mobs, puzzles, ... (see: <a href="#project">Projects</a>).
-        </div>
-    </details>
-    <br>
-    <h3>2024-2028: Hong Kong University of Science and Technology <span class="tag">Higher Ed.</span></h3>
-    <ul>
-        <li>Department of Computer Science and Engineering, School of Engineering</li>
-        <span class="tag">COMP</span><span class="tag">+AI</span>
-        <li>24 Summer CGPA: <span class="figure">4.009</span>, Major GPA: <span class="figure">4.263</span></li>
-        <li>List of Dean's Lists: <span class="tag">24 Fall</span><span class="tag">25 Spring</span> </li>
-    </ul>
-    <details>
-        <summary>Learn more</summary>
-        <div class="essay">
-            <!--line breaks written here doesn't reflect anything-->
-            Upon entering HKUST, I quickly realized that to secure a major in Computer Science, 
-            I needed to earn sufficient grade points. Therefore, I studied harder in my first semester to realize my dream major.
-            Obtaining my first Dean's List award, I found my strength in the academic field. Despite having enough grade points, 
-            I continued persuing for better grades to "exceed 4" in my first year, as it happened.
-            <br>
-            Now that I have achieved my academic goal, I am looking for a more vibrant university life in subsequent years, by enlarging my social circle, joining 
-            student-held organizations, and so on.
-            <br>
-            <br>
-            Hall of Fame - the list of A+ courses:
-            <table>
-                <tr>
-                    <th>Course</th> <th>Brief</th> <th>Semester</th>
-                </tr>
-                <tr>
-                    <td>COMP1021</td> <td>Intro. to CS</td> <td>24 Fall</td>
-                </tr>
-                <tr>
-                    <td>MATH1013</td> <td>Calc. 1</td> <td>24 Fall</td>
-                </tr>
-                <tr>
-                    <td>PHYS1112</td> <td>General Phys.</td> <td>24 Fall</td>
-                </tr>
-                <tr>
-                    <td>ELEC1200</td> <td>Communication Sys.</td> <td>25 Spring</td>
-                </tr>
-                <tr>
-                    <td>COMP2011</td> <td>C++ Programming</td> <td>25 Spring</td>
-                </tr>
-                <tr>
-                    <td>COMP2711</td> <td>Discrete Math</td> <td>25 Summer</td>
-                </tr>
-            </table>
-        </div>
-    </details>
-    <br>
-</div>
-<div class="block">
-    <h1 id="project">Projects</h1>
-    <div class="projectlist">
-        <h3>Unnamed Dungeon Game</h3>
-        <span class="tag">procedural generation</span><span class="tag">combat</span><span class="tag">puzzles</span><span class="tag">boss fight</span><span class="tag">C#</span><span class="tag">Unity</span>
-        <details>
-            <summary>Learn more</summary>
-            <div class="essay">
-                This game is inspired by Hypixel Skyblock's dungeons (Catacombs), made for my secondary school's open day.
-                <br>
-                In this game, the dungeon is procedurally generated in a square grid filled with rooms.
-                The rooms include: combat room, puzzle room, blacksmith room, mini-boss room, and a pre-boss room.
-                <br>
-                Spawned in a starting room, the player will explore the dungeon to fight, obtain gears, gain buffs, and so on, where clearing a room will unlock adjacent rooms.
-                <br>
-                Should the player reach the pre-boss room, they can initiate a final boss fight.
+    <div id="info">
+        <div class="block" style="width: 25%; background: #484848">
+            <h1>FAN, Siu Hei</h1>
+            <h3>Bachelors of Engineering 2028</h3>
+            <span class="tag">CS</span>
+            <span class="tag">AI ext.</span>
+            <hr>
+            <div class="pfp">
+                <img src="./assets/images/pfp.jpg">
             </div>
-        </details>
-    </div>
-    <div class="projectlist">
-        <h3>Big Ol' n Chooses r</h3>
-        <span class="tag">simple</span><span class="tag">javascript</span>
-        <details>
-            <summary>Learn more</summary>
-            <div class="essay">
-                Not much, just a simple game to introduce myself into web dev. It is a good way to burn time though.
+            <i>This webpage is a nerfed version of my CV.</i>
+
+            <h2><i class="material-icons">face</i> Basic Info</h2>
+            <hr>
+            <i class="material-icons">male</i>: M
+            <br>
+            <i class="material-icons">cake</i>: 19 years
+            <br>
+            <i class="material-icons">location_city</i>: Hong Kong SAR
+            <br><br>
+            <h2><i class="material-icons">3p</i> Contact</h3>
+            <hr>
+            Instagram: <a class="ig" href="https://www.instagram.com/xx_jerryfan_xx">@xx_jerryfan_xx</a>
+            <br>
+            Email: <a href="mailto:fansiuhei2@gmail.com">fansiuhei2@gmail.com</a>
+            <br><br>
+            <h2><i class="material-icons">terminal</i> Skills</h2>
+            <hr>
+            Interests:
+            <span class="tag">Backend</span>
+            <span class="tag">Game dev</span>
+            <br>
+            Programming Languages: 
+            <span class="tag proficient">Python</span>
+            <span class="tag proficient">C#</span>
+            <span class="tag proficient">C</span>
+            <span class="tag proficient">C++</span>
+            <span class="tag competent">Type/Javascript</span>
+            <br>
+            Platforms:
+            <span class="tag">Unity</span>
+            <br><br>
+            <h2><i class="material-icons">bar_chart</i> Key Stats</h2>
+            <hr>
+            CGPA: <span class="figure">4.009</span>
+            <span class="tag proficient">top 2%</span>
+            <br>
+            HKDSE Best 5|6: <span class="figure">27</span>| <span class="figure">31</span>
+            <br><br>
+            <h2><i class="material-icons">language</i> Languages</h2>
+            <hr>
+            Chinese:
+            <span class="tag proficient">Cantonese</span>
+            <span class="tag competent">Mandarin</span>
+            <br>
+            English:
+            <span class="tag proficient">English</span>
+        </div>
+
+
+        <div class="block" style="width:75%; background: #222; padding-left: 10px;">
+            <h1><i class="material-icons">account_box</i> Profile</h1>
+            <hr>
+            HKUST CSE+AI student. Designs my game if not gaming/pastpaper grinding.
+            <br>Current main focus is a simple Unity game, where I am implementing a combat system.
+            <br><br>
+            <h1><i class="material-icons">school</i> Education</h1>
+            <hr>
+            <div class="timeline">
+                <div class="container right">
+                    <div class="content">
+                        <h2>2018-2024</h2>
+                        <h3>King's College, Hong Kong</h3> <span class="tag">Secondary</span>
+                        <br>
+                        <ul>
+                        <li>KCHB Member</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right sub">
+                    <div class="content">
+                        <h3>2022-2023</h3>
+                        Computer Club Chairman
+                        <br>
+                        <ul>
+                            <li>Formula AI Competition runner-up <span class="tag">Race</span> <span class="tag">Machine Learning</span></li>
+                            <li>Made Unnamed Dungeon Game <span class="tag">Game</span> <span class="tag">Roguelike</span> <span class="tag">Dungeon</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2024-present</h2>
+                        <h3>HKUST</h3>
+                        <span class="tag">Higher Ed.</span>
+                        <br>
+                        Major:
+                        <span class="tag">COMP</span>
+                        <span class="tag">+AI</span>
+                        <br>
+                        <ul>
+                            <li>CGPA: <span class="figure">4.009</span></li>
+                            <li>Major CGPA: <span class="figure">4.263</span></li>
+                            <li>Dean's Lists: <span class="tag">24Fall</span> <span class="tag">25Spring</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </details>
-        <details>
-            <summary>Play now</summary>
-            <iframe src="assets/html/combinatorio.html"></iframe>
-        </details>
+            <br><br>
+            <h1><i class="material-icons">assignment</i> Projects and Experiences</h1>
+            <hr>
+
+            <div class="projectlist">
+                <h2>Dungeon Game: Renamed</h2>
+                <span class="tag">Ongoing</span>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <hr>
+                Redeveloping Unnamed Dungeon Game as practice.
+                <br>Implemented Changes:
+                <ul>
+                    <li>Dimension: 2D -> 3D</li>
+                    <li>Stats calculation: every access -> every stat change</li>
+                    <li>Adding new stats: change constructor and operator overload -> only expanding an enumerator</li>
+                    <li>Attacking: Range-based melee attack -> Weapon-hit-based melee attack</li>
+                    <li>Blocking (parrying): None -> Weapon-hit-based blocking</li>
+                </ul>
+                Planned changes:
+                <ul>
+                    <li>Dungeon floor shape: square -> random shape</li>
+                    <li>Game type: roguelike -> roguelite</li>
+                    <li>Weapon attack pattern: fixed -> flexible</li>
+                    <li>and so on...</li>
+                </ul>
+            </div>
+
+            <div class="projectlist">
+                <h2>Unnamed Dungeon Game</h2>
+                <span class="tag">Roguelike</span>
+                <span class="tag">Dungeon</span>
+                <span class="tag">Procedural Generation</span>
+                <span class="tag">Boss Fight</span>
+                <span class="tag">Puzzle</span>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <hr>
+                Unnamed Dungeon Game is a game made for my high school's open day.
+                <ul>
+                    <li>In charge of everything except for game art</li>
+                    <li>Inspired by the Catacombs dungeon in Hypixel Skyblock</li>
+                    <li>The game is set in a 2D top-down way</li>
+                    <li>From a starting room, navigate a procedurally generated dungeon made of various square-based rooms</li>
+                    <li>Fight mobs, change gears, fight minibosses, and solve puzzles in the rooms</li>
+                    <li>Reach the exit and face the final boss</li>
+                </ul>
+            </div>
+
+            <div class="projectlist">
+                <h2>Formula AI Competition</h2>
+                <span class="tag">Racing</span>
+                <span class="tag">AI</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Donkey Car</span>
+                <hr>
+                I won second place in this competition.
+                <ul>
+                    <li>Donkey Car: a remote-control car with a front camera</li>
+                    <li>Used the front camera to record frames</li>
+                    <li>Trained via a Google Colab repository</li>
+                    <li>Fastest lap time: <span class="figure">7.4</span>s</li>
+                </ul>
+            </div>
+            
+            <br><br>
+        </div>
     </div>
-</div>
 </body>

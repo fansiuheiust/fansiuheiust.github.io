@@ -4,14 +4,19 @@
 
 body {
     /*background-color: #252e33;*/
-    background: #020024;
-    background: radial-gradient(circle, rgba(37,46, 51, 1) 0%, rgba(9, 121, 121, 1) 100%);
+    /* background: #020024;
+    background: radial-gradient(circle, rgba(37,46, 51, 1) 0%, rgba(9, 121, 121, 1) 100%); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #ffffff;
     font-family: Verdana, sans-serif;
     font-size: 16px;
     /*font-family: 'Comic Sans MS';*/
+    margin: 0 0 0 0;
+}
+
+i.material-icons {
+    font-size: inherit;
 }
 
 h1, h2, h3 {
@@ -24,9 +29,19 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     font-size: inherit;
+    list-style-type: none;
+    -webkit-padding-start: 12px;
 }
 li {
     font-size: inherit;
+    /* list-style-image: url('../icons/right_arrow.svg'); */
+}
+ul li::before {
+    font-family: "Material Icons";
+    content: "arrow_right";
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 details {
@@ -53,6 +68,11 @@ details[open] summary {
     text-shadow: 0 0 4px #26ff00;
 }
 
+hr {
+    border-style: solid;
+    border-color: white;
+};
+
 table {
     background-color: #465052;
     border: 2px inset #2f3436;
@@ -70,22 +90,23 @@ iframe {
 #info {
     display:flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    height: fit-content;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 div.block {
-    width:90%;
+    width: 100%;
     /*max-width: fit-content;*/
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     /*background-color: #697d87; */
     background: #697D87;
     background: linear-gradient(135deg,rgba(105, 125, 135, 0.9) 0%, rgba(122, 147, 161, 0.9) 50%, rgba(167, 190, 209, 0.9) 100%);
     /*background-attachment: fixed;*/
     
-    border-radius: 8px;
-    border: 4px outset #a3c2d4;
+    /* border-radius: 8px;
+    border: 4px outset #a3c2d4; */
     padding: 0.5%;
     color: #ffffff;
 }
@@ -93,6 +114,15 @@ div.block.aggregated {
     margin-left: 1%;
     margin-right: 1%;
 }
+
+.pfp img {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: fit-content;
+    width: 90%;
+    border-radius: 50%;
+}
+
 
 .tag {
     display:inline-block;
@@ -103,30 +133,37 @@ div.block.aggregated {
     padding-right: 2px;
     font-family: 'Consolas', monospace;
     font-size: 14px;
-    margin-right: 5px;
-    background-color: rgb(52, 55, 56, 0.5);
+    /* margin-right: 5px; */
+    background-color: rgb(63, 139, 190, 0.5);
     box-shadow: 0.75px 0.75px rgb(178, 191, 194), 1.5px 1.5px rgb(178, 191, 194);
 }
 .tag.proficient {
-    background-color: rgb(38, 237, 61, 0.5);
+    background-color: rgb(38, 227, 61, 0.5);
 }
 .tag.competent {
-    background-color: rgb(255, 222, 36, 0.5);
+    background-color: rgb(245, 212, 36, 0.5);
 }
 .figure {
-    border: 2px inset #2f3436;
-    background-color: #465052;
+    border: 2px inset #333;
+    background-color: #444;
     padding-left: 1px;
     padding-right: 1px;
     margin-right: 4px;
     font-family: 'Courier New', monospace;
     font-size: 14px;
-    color: #fff9e0;
-    text-shadow: 0.3px 0.3px #a39f90, 0.6px 0.6px #a39f90;
+    color: #fff;
+    text-shadow: 0.3px 0.3px #aaa, 0.6px 0.6px #aaa;
+}
+
+a {
+    color: #00eeee;
+}
+a.ig {
+    color: #ee00ee;
 }
 a:hover {
     color:#e3e3ff;
-    text-shadow: 0px 0px 4px #0000ee;
+    text-shadow: 0px 0px 4px #00eeee;
 }
 a:hover.ig {
     color: #ffdeed;
@@ -141,16 +178,150 @@ a:hover.ig {
 }
 
 .projectlist {
-    background-color: #454e4e;
-    border: 1px outset #677474;
+    background-color: #484848;
+    border: 1px #677474;
     border-radius: 5px;
-    padding-left: 2px;
+    /* padding-left: 2px;
     padding-right: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px; */
+    padding: 4px;
     margin-bottom: 10px;
+    width: 98%;
 }
 .projectlist .tag {
     background-color: rgba(63, 139, 190, 0.5);
 }
 .projectlist details summary {
     border-color: #738181;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: 06afde;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #06afde;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container.sub::after {
+    width: 14px;
+    height: 14px;
+    border-width: 3.5px;
+    margin-left: 6px;
+    
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 5px 5px;
+  background-color: #484848;
+  position: relative;
+  border-radius: 6px;
+}
+/* Place the timelime to the left */
+.timeline::after {
+    left: 31px;
+}
+
+/* Full-width containers */
+.container {
+    width: fit-content;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+.container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Make sure all circles are at the same spot */
+.left::after, .right::after {
+    left: 15px;
+}
+
+/* Make all right containers behave like the left ones */
+.right {
+    left: 0%;
 }
